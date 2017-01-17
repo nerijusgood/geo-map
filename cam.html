@@ -27,33 +27,7 @@
   <div id="cam">
     <video id="video" width="100%" height="100%" autoplay></video>
   </div>
-<script src="cam.js"></script>
-<script>
-  // Grab elements, create settings, etc.
-  var video = document.getElementById('video');
-
-  // Get access to the camera!
-  if(navigator.mediaDevices && navigator.mediaDevices.getUserMedia && navigator.mediaDevices.enumerateDevices) {
-    
-      navigator.mediaDevices.enumerateDevices()
-      .then(function(devices) {
-        devices.forEach(function(device) {
-          console.log(device.kind + ": " + device.label +
-            " id = " + device.deviceId);
-        });
-      })
-      .catch(function(err) {
-        console.log(err.name + ": " + error.message);
-      });
-      
-      
-      
-      navigator.mediaDevices.getUserMedia({ video: true }).then(function(stream) {
-          video.src = window.URL.createObjectURL(stream);
-          video.play();
-      });
-  }
-</script>
-
+  
+  <script src="cam.js"></script>
 </body>
 </html>
