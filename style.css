@@ -1,0 +1,43 @@
+body { 
+  margin:0;
+  padding:0;
+}
+
+#map { 
+  position:absolute;
+  top: 40px;
+  bottom:0;
+  width:100%;
+}
+
+#cam {
+  position:absolute;
+  top: 100px;
+  bottom:0;
+  width:100%;
+}
+
+nav {
+  height: 40px;
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+}
+
+button, a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100px;
+  background: gray;
+  border: none;
+  margin-right: 3px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
